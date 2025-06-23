@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiva Prasad | Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- Font Awesome CDN for Skill Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ======= HEADER ======= -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span>Portfolio</span></div>
+            <div class="hamburger"  onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ======= HOME SECTION ======= -->
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>Hi, <br> I'm <span>Shiva Prasad</span></h1>
+                <h2>CSE Student & Frontend Developer</h2>
+
+            </div>
+
+            <div class="home-image">
+                <img src="shiva.jpg" alt="Shiva Prasad" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= ABOUT SECTION ======= -->
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <!-- Left Side Image -->
+             <div class="about-image">
+                <img src="shivaprasad.png" alt="Shiva Prasad">
+            </div>
+
+            <!-- Right Side Text + Button -->
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+               
+                <p>
+                    I'm Jillapally Shiva Prasad, a Computer Science Engineering student currently learning and building
+                    projects using HTML, CSS, JavaScript, and Python. I have a strong foundation in programming and web
+                    development, and I'm continuously exploring new technologies to improve my skills.
+                </p>
+                <button class="exp-btn" onclick="document.querySelector('.education-details').classList.toggle('show')">
+                    Education
+                </button>
+
+                <div class="education-details">
+                    <h3>My Education Journey</h3>
+                    <ul>
+                        <li>
+                            <span class="year">2025 – Current</span><br />
+                            <strong>Vaagdevi Engineering College</strong><br />
+                            B.Tech in Computer Science Engineering <br />
+                            <span class="highlight">CGPA: 8.26</span>
+                        </li>
+                        <li>
+                            <span class="year">2021 – 2023</span><br />
+                            <strong> Govt Junior College, Koutala </strong><br />
+                            Intermediate in MPC <br />
+                            <span class="highlight"> Percentage: 90.4%</span>
+                        </li>
+                        <li>
+                            <span class="year">2021</span><br />
+                            <strong>SSC at ZPHS</strong><br />
+                            <span class="highlight">Percentage: 10 GPA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- SKILL SECTION START -->
+    <section class="skill-section" id="skills">
+        <h2>Professional Skills</h2>
+        <p class="description">
+            I specialize in HTML, CSS, Python, JavaScript, Java, and SQL, with strong problem-solving abilities and a
+            good understanding of real-world programming. I'm continuously improving my skills to stay updated with
+            current tech trends.
+        </p>
+
+        <!-- HTML -->
+        <div class="skill-box html">
+            <div class="skill-title"><span><i class="fa-brands fa-html5"></i> HTML5</span> <span>95%</span></div>
+            <div class="skill-bar">
+                <div class="skill-fill"></div>
+            </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-box css">
+            <div class="skill-title"><span><i class="fa-brands fa-css3-alt"></i> CSS3</span> <span>85%</span></div>
+            <div class="skill-bar">
+                <div class="skill-fill"></div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-box js">
+            <div class="skill-title"><span><i class="fa-brands fa-js"></i> JavaScript</span> <span>75%</span></div>
+            <div class="skill-bar">
+                <div class="skill-fill"></div>
+            </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-box python">
+            <div class="skill-title"><span><i class="fa-brands fa-python"></i> Python</span> <span>85%</span></div>
+            <div class="skill-bar">
+                <div class="skill-fill"></div>
+            </div>
+        </div>
+
+        <!-- Java -->
+        <div class="skill-box java">
+            <div class="skill-title"><span><i class="fa-brands fa-java"></i> Java</span> <span>75%</span></div>
+            <div class="skill-bar">
+                <div class="skill-fill"></div>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-box soft">
+            <div class="skill-title"><span><i class="fa-solid fa-database"></i> SQL</span> <span>85%</span></div>
+            <div class="skill-bar">
+                <div class="skill-fill"></div>
+            </div>
+        </div>
+
+    </section>
+    <!--project section -->
+
+    <section class="project-section" id="projects">
+        <h2>My Projects</h2>
+        <p class="subtitle">Explore some of the projects I've worked on during my learning journey.</p>
+
+        <div class="timeline-line"></div>
+
+        <!-- Project 1 -->
+        <div class="step">
+            <div class="step-box" id="step-box1">
+                <img src="Screenshot 2025-06-19 124012.png" alt="Portfolio Website">
+                <h3>1. Portfolio Website</h3>
+                <p>A personal portfolio built using HTML, CSS, and JavaScript showcasing skills and achievements.</p>
+            </div>
+            <div class="step-number">1</div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="step">
+            <div class="step-box" id="step-box2">
+                <img src="random.png" alt="Random Password Generator">
+                <h3>2. Random Password Generator</h3>
+                <p>This project generates secure random passwords using JavaScript and custom criteria.</p>
+            </div>
+            <div class="step-number">2</div>
+        </div>
+
+
+
+        <!-- Project 5 -->
+        <div class="step">
+            <div class="step-box" id="step-box3">
+                <img src="weather.png" alt="Weather App">
+                <h3>3. Weather Report App</h3>
+                <p>A weather app that fetches real-time weather info using a public API based on user location.</p>
+            </div>
+            <div class="step-number">3</div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="step">
+            <div class="step-box" id="step-box4">
+                <img src="calculator.png" alt="Simple Calculator">
+                <h3>4. Simple Calculator</h3>
+                <p>A basic calculator built using HTML, CSS, and JavaScript to perform simple math operations.</p>
+            </div>
+            <div class="step-number">4</div>
+        </div>
+
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p class="contact-subtitle">Let's get in touch! Feel free to reach out for collaboration, questions, or just to
+            connect.</p>
+
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="contact-btn">
+                    <span>Send Message</span>
+                    <svg class="send-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Shiva Prasad. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shivaprasad-jillapally-181087334" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Shiva-ux67" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=mq6xit0" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+   <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  // Toggle menu on hamburger click
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Close menu when any link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+      navLinks.classList.remove('show');
+    }
+  });
+</script>
+
+
+
+
+</body>
+
+</html>
