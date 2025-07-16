@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar">
             <div class="logo"><span>Portfolio</span></div>
-            <div class="hamburger"  onclick="toggleMenu()">☰</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -48,14 +48,15 @@
         <div class="about-container">
 
             <!-- Left Side Image -->
-             <div class="about-image">
-                <img src="shivaprasad.png" alt="Shiva Prasad">
+            <div class="about-image">
+                <img src="wfort.jpg" alt="Shiva Prasad">
             </div>
 
             <!-- Right Side Text + Button -->
             <div class="about-text">
-                <h2>About <span>Me</span></h2>
-               
+                <h2 class="typing-effect">About <span>Me</span></h2>
+
+
                 <p>
                     I'm Jillapally Shiva Prasad, a Computer Science Engineering student currently learning and building
                     projects using HTML, CSS, JavaScript, and Python. I have a strong foundation in programming and web
@@ -147,6 +148,7 @@
                 <div class="skill-fill"></div>
             </div>
         </div>
+        
 
     </section>
     <!--project section -->
@@ -232,45 +234,22 @@
         <div class="footer-content">
             <p>&copy; 2025 Shiva Prasad. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/shivaprasad-jillapally-181087334" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/shivaprasad-jillapally-181087334" target="_blank"
+                    aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="https://github.com/Shiva-ux67" target="_blank" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=mq6xit0" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=mq6xit0"
+                    target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </div>
     </footer>
-   <script>
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.getElementById('navLinks');
-
-  // Toggle menu on hamburger click
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-
-  // Close menu when any link is clicked
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('show');
-    });
-  });
-
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
-      navLinks.classList.remove('show');
-    }
-  });
-</script>
-
-
-
-
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
