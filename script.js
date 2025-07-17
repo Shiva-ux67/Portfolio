@@ -42,4 +42,42 @@ const hamburger = document.querySelector('.hamburger');
     }
   });
 
+const circles = document.querySelectorAll('.circle');
+let animated = false;
+
+function animateCircles() {
+  if (animated) return;
+
+  circles.forEach(circle => {
+    const percent = circle.getAttribute('data-percent');
+    let current = 0;
+
+    const interval = setInterval(() => {
+      if (current >= percent) {
+        clearInterval(interval);
+      } else {
+        current++;
+        const color = circle.classList.contains('blue') ? '#2196f3' :
+                      circle.classList.contains('yellow') ? '#fdd835' :
+                      circle.classList.contains('teal') ? '#00e5ff' :
+                      circle.classList.contains('green') ? '#0df005ff' :
+                      '#ff9800';
+
+        circle.style.background = `conic-gradient(${color} ${current}%, #444 ${current}%)`;
+        circle.querySelector('.percent').textContent = `${current}%`;
+      }
+    }, 20);
+  });
+
+  animated = true;
+}
+
+window.addEventListener('scroll', () => {
+  const section = document.getElementById('skills');
+  const rect = section.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 100) {
+    animateCircles();
+  }
+});
+
 

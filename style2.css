@@ -342,61 +342,104 @@
    color: #222;
  }
 
- /* Skill Section Container */
  .skill-section {
-   max-width: 900px;
-   margin: auto;
-   padding: 60px 20px;
- }
-
- .skill-section h2 {
-   font-size: 2rem;
-   margin-bottom: 15px;
-   font-weight: 700;
-   color: #0cf4f4;
- }
-
- .skill-section p.description {
-   font-size: 1rem;
-   color: #fffefe;
-   margin-bottom: 40px;
-   line-height: 1.6;
- }
-
- /* Skill Card */
-.skill-section {
-  padding:80px 1rem; max-width:900px; margin:auto;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 1;
 }
+
 .skill-section h2 {
-  font-size:2rem; margin-bottom:1rem; color:#0cf4f4;
+  font-size: 2rem;
+  color: #00ffd0;
 }
-.skill-section p { margin-bottom:2rem; color:#ccc; }
-.skill-box {
-  background:rgba(255,255,255,0.1);
-  border-radius:12px; padding:1rem; margin-bottom:1.5rem;
-  transition:box-shadow 0.3s ease;
+
+.skill-section p {
+  font-family: sans-serif;
+  font-size: 1.05rem;
+  color: #e6e6e6;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
-.skill-box:hover { box-shadow:0 0 20px #3f7bfd; }
-.skill-title {
-  display:flex; justify-content:space-between; align-items:center;
-  margin-bottom:0.5rem; font-weight:600;
+
+.circles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
-.skill-title i {
-  font-size:1.5rem; color:#3f7bfd;
+
+.circle-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
 }
-.skill-bar {
-  background:#333; height:8px; border-radius:5px;
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#ff9800 0%, #444 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 15px #ff9800;
 }
-.skill-fill {
-  height:100%; background:#3f7bfd;
-  width:0; transition:width 1.2s ease-in-out;
+
+.circle.blue {
+  background: conic-gradient(#2196f3 0%, #444 0%);
+  box-shadow: 0 0 15px #2196f3;
 }
-.html .skill-fill { width:95%; }
-.css .skill-fill { width:85%; }
-.js .skill-fill { width:75%; }
-.python .skill-fill { width:85%; }
-.java .skill-fill { width:75%; }
-.soft .skill-fill { width:85%; }
+
+.circle.yellow {
+  background: conic-gradient(#fdd835 0%, #444 0%);
+  box-shadow: 0 0 15px #fdd835;
+}
+
+.circle.teal {
+  background: conic-gradient(#00e5ff 0%, #444 0%);
+  box-shadow: 0 0 15px #00e5ff;
+}
+.circle.green {
+  background: conic-gradient(#34f105 0%, #444 0%);
+  box-shadow: 0 0 15px #1bee04;
+}
+
+.percent {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Background Icons Animation */
+.icon-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.icon-bg i {
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.05);
+  animation: float 20s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); }
+  100% { transform: translateY(-100vh) rotate(360deg); }
+}
+
 
  /* CSS FILE: style.css */
  body {
